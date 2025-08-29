@@ -1,3 +1,103 @@
-html {
-    font: Calibri;
+/* style.css */
+
+.navbara {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+
+.navbar a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  float: left;
+  text-decoration: none;
+}
+
+.navbar a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.active {
+  background-color: crimson;
+  color: white;
+}
+
+div {
+    border: solid 2px dimgray;
+}
+
+.grid {
+
+    display: grid;
+    grid-template-areas: "a b" "c c";
+    gap: 10px;
+    margin: 30px;
+}
+
+.first {
+    grid-area: a;
+    background-color: azure;
+}
+
+.second {
+    grid-area: b;
+    background-color: azure;
+}
+
+.third {
+    grid-area: c;
+    background-color: azure;
+    
+  text-align: center;
+}
+
+.box {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.a404 {
+    text-align: center;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color:crimson;
+  color: white;
+}
+
+.fa {font-size:50px;}
+
+b {
+  color:crimson;
+}
+
